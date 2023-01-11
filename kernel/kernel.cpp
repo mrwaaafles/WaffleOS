@@ -1,9 +1,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
- 
 
-/* Hardware text mode color constants. */
 enum vga_color {
 	VGA_COLOR_BLACK = 0,
 	VGA_COLOR_BLUE = 1,
@@ -103,9 +101,9 @@ void terminal_writestring(const char* data)
  
 void main(void) 
 {
-	/* Initialize terminal interface */
+
 	terminal_initialize();
  
-	/* Newline support is left as an exercise. */
-	terminal_writestring(" Hello World!\n Waffle is a certified legend!\n Now he needs something else to do...\n Maybe he'll flesh out this OS!");
+
+	terminal_writestring(" Waffle OS Booting");
 }
